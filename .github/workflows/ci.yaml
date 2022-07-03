@@ -20,15 +20,4 @@ jobs:
       - name: Run tests
         run: PYTHONPATH=. py.test --verbose -sname: Package Project
 
-# Controls when the workflow will run
-on: [push]
-
-jobs:
-        build:
-                runs-on: ubuntu-latest
-
-                steps:
-                        #get the code under $GITHUB_WORKSPACE directory
-                        - uses: actions/checkout@v2
-
 
